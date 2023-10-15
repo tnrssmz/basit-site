@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Web Sitem</title>
+    <style>
+        .menu-bar {
+            background: #381111;
+            text-align: center;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 0;
+            width: 650px;
+        }
+
+        .menu-bar ul li {
+            width: 150px;
+            margin: 0px 10px;
+            padding: 15px;
+        }
+
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .menu-bar ul li a i {
+            margin: 5px;
+        }
+
+        .menu-bar ul li a:hover {
+            color: rgb(177, 152, 86);
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkred;
+        }
+
+        .footer-bar {
+            width: 100%;
+            background: #381111;
+            text-align: center;
+        }
+
+        .footer-bar ul {
+            display: inline-flex;
+            list-style: none;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0 0 0 0;
+            margin: 5px;
+        }
+
+        .footer-bar ul li {
+            width: 150px;
+            margin: 0px 10px;
+            padding: 0 px 15px;
+        }
+
+        .footer-bar ul li a {
+            font-size: large;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-bar ul li a:hover {
+            color: rgb(177, 152, 86);
+        }
+
+        .boyut {
+            width: 100% !important;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .boyut2 {
+            width: 100% !important;
+            height: 300px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body style="background-color: gainsboro;">
+    <header>
+        <h1>BENİM WEB SİTEM</h1>
+        <nav class="menu-bar">
+            <ul>
+                <li>
+                    <a href="#main"><i class="fa-solid fa-house"></i>Anasayfa</a>
+                </li>
+                <li>
+                    <a href="#aboutus"><i class="fa-solid fa-user"></i>Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="#contactus"><i class="fa-solid fa-envelope"></i>İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="boyut2">
+            <video src="./static/video/banner.mp4" width="100%" autoplay muted loop></video>
+        </div>
+
+        <section id="main" style="text-align: center;">
+            <h2>Neos Yazılım Front-End Grubu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quam. Error totam explicabo iste
+                quam aliquid illum ratione repellat veniam consequatur deserunt? Dolorem architecto aliquid voluptatem
+                blanditiis, ipsam dolore minus facere nihil molestiae atque perferendis cupiditate voluptate, nemo natus
+                consequuntur porro autem iure, magni accusamus dolorum reprehenderit quisquam voluptates omnis
+                perspiciatis? Debitis repellendus obcaecati aspernatur. Dolore optio harum, omnis sit repellat minus ea
+                sed! Adipisci maiores aut nihil, ducimus ipsa, unde consequuntur eius earum delectus recusandae sit
+                omnis quae, neque sed esse consectetur eos dicta? Neque praesentium illum quis sed ipsum modi velit
+                reprehenderit harum, vitae nostrum. Nisi, officia sequi?</p>
+        </section>
+        <br>
+        <section style="text-align: center;">
+            <div class="boyut">
+                <img src="https://picsum.photos/id/20/2000/1000" width="100%" alt="">
+            </div>
+            <br>
+            <div class="boyut">
+                <img src="https://picsum.photos/id/35/2000/1000" width="100%" alt="">
+            </div>
+        </section>
+        <br>
+        <hr>
+        <section id="aboutus" style="text-align: center">
+            <h2>Tanıtım Videosu</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum aut architecto omnis assumenda harum cum
+                necessitatibus sint impedit quos, voluptatum consequatur doloribus laudantium ad iste alias facere
+                maxime et
+                itaque!
+            </p>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jTIruQf9BcM?si=XDRfQjXusHv_wHe1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+    </main>
+    <div>
+        <form action="#main" style="text-align: center">
+            <label for="fullname">İsim Soyisim:</label>
+            <br>
+            <input type="text" id="fullname">
+            <br>
+            <label for="mail">E-posta:</label>
+            <br>
+            <input type="email" id="mail">
+            <br>
+            <label for="pass">Şifre:</label>
+            <br>
+            <input type="password" id="pass">
+            <br>
+            <label for="pass2">Şifre Onay:</label>
+            <br>
+            <input type="password" id="pass2">
+            <br>
+            <label for="birth">Doğum Tarihiniz:</label>
+            <br>
+            <input type="date" id="birth">
+            <br><br>
+            <label for="cv">CV'nizi yükleyiniz:</label>
+            <input type="file" id="cv">
+            <br><br>
+            <input type="submit" value="Gönder">
+        </form>
+    </div>
+    <br>
+    <footer id="contactus" class="footer-bar">
+
+        <ul>
+            <li>
+                <a href="">İletişim</a>
+            </li>
+            <li>
+                <a href="">Adresimiz</a>
+            </li>
+            <li>
+                <a href="">Fiyat Alın</a>
+            </li>
+            <li>
+                <a href="">Bize Ulaşın</a>
+            </li>
+        </ul>
+        <br>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/b4f9aafbc2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
